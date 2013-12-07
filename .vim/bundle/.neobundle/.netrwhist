@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/usr/share/zsh/4.3.10/scripts'
+let g:netrw_dirhist_2='/usr/share/zsh/4.3.10/functions'
+let g:netrw_dirhist_3='/root/.tmux'
+let g:netrw_dirhist_4='/var/www/grrefer.com/current/app/controllers'
+let g:netrw_dirhist_5='/usr/local/rvm/gems/ruby-1.9.3-p125/gems/twitter-bootstrap-rails-2.2.7/lib/twitter'
+let g:netrw_dirhist_6='/var/www/ginzaseo.com/current/app/assets/stylesheets'
