@@ -27,6 +27,8 @@ alias gmg="git merge"
 alias glg="git log"
 alias gdf="git diff"
 alias gpuom="git push origin master"
+alias gsubs="git submodule status"
+alias gsubu="git submoudle update"
 alias caps="cap staging deploy"
 alias capp="cap production deploy"
 alias tm="tmux -2"
@@ -60,15 +62,15 @@ SAVEHIST=1000000
 export LANG=ja_JP.UTF-8
 
 # Enable to read japanese
-#setopt print_eight_bit
+setopt print_eight_bit
 
 # Unable flow control
-#setopt no_flow_control
+setopt no_flow_control
 
 # Comment out after # option
-#setopt interactive_comments
+setopt interactive_comments
 
 # Display path to right
-#PROMPT="%m:%n%# "
+PROMPT="%m:%n%# "
 #PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-#RPROMPT="[%~]"
+RPROMPT="[%~]"
