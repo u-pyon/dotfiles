@@ -23,7 +23,7 @@ if has('vim_starting')
   call neobundle#rc(expand('~/.vim/bundle/'))
 endif
 " originalrepos on github
-"NeoBundle 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
     \ 'windows' : 'make -f make_mingw32.mak',
@@ -45,18 +45,20 @@ NeoBundle 'git://github.com/kien/ctrlp.vim.git'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'rails.vim'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle "skwp/vim-rspec.git"
 
 filetype plugin indent on     " required!
 filetype indent on
 "vi上から、:NeoBundleInstallで.vimrcのNeoBundleで指定されているリポジトリのプラグインをインストールできる。
 "プラグインを削除したい場合は、vimrc上からNeoBundleの記述を消して:NeoBundleCleanでできる。
+
+NeoBundleCheck
+
 "" /For NeoBundle
 
 
 "" vim-rspec
-
 " VimからRSpecを実行する
-NeoBundle "skwp/vim-rspec.git"
 " let g:RspecKeyma,=0
 nnoremap <silent> ,rs :RunSpec<CR>
 nnoremap <silent> ,rl :RunSpecLine<CR>
