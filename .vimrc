@@ -11,19 +11,17 @@ set nocompatible
 set linebreak
 
 colorscheme darkblue
-execute pathogen#infect()
 syntax on
-"filetype plugin on
 
 "" For NeoBundle
 filetype off
+filetype plugin indent off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
+call neobundle#rc(expand('~/.vim/bundle/'))
 " originalrepos on github
-NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
     \ 'windows' : 'make -f make_mingw32.mak',
@@ -35,6 +33,7 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neocomplcache-rsense'

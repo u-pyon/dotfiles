@@ -1,7 +1,6 @@
-# .bashrc
-PATH=${PATH}:/usr/local/bin
-
 # User specific aliases and functions
+export PATH=${PATH}:/bin
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 
 alias v='vim'
 alias vi='vim'
@@ -26,6 +25,9 @@ alias gft="git fetch"
 alias gmg="git merge"
 alias glg="git log"
 alias gdf="git diff"
+alias gr="git remote"
+alias gra="git remote add"
+alias grs="git remote show"
 alias gpuom="git push origin master"
 alias gsubs="git submodule status"
 alias gsubu="git submoudle update"
