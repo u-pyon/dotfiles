@@ -1,6 +1,7 @@
 # User specific aliases and functions
 export PATH=${PATH}:/bin
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias v='vim'
 alias vi='vim'
@@ -45,16 +46,16 @@ if [ -f /etc/zshrc ]; then
 fi
 
 # key bind
-#bindkey -e
-#bindkey "^?"    backward-delete-char
-#bindkey "^H"    backward-delete-char
-#bindkey "^[[3~" delete-char
-#bindkey "^[[1~" beginning-of-line
-#bindkey "^[[4~" end-of-line
+bindkey -e
+bindkey "^?"    backward-delete-char
+bindkey "^H"    backward-delete-char
+bindkey "^[[3~" delete-char
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 
 # Auto complete
-#autoload -Uz compinit
-#compinit
+autoload -Uz compinit
+compinit
 
 # histories
 HISTFILE=~/.zsh_history
