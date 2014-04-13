@@ -4,6 +4,7 @@ emmet-vim
 neocomplcache
 neocomplcache-rsense
 neosnippet
+neosnippet-snippets
 rails.vim
 syntastic
 tcomment_vim
