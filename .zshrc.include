@@ -1,7 +1,8 @@
-# User specific aliases and functions
-export PATH=${PATH}:/bin
+export PATH="${PATH}:/bin"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+#export LANG=ja_JP.UTF-8
 
 alias v='vim'
 alias vi='vim'
@@ -62,7 +63,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-export LANG=ja_JP.UTF-8
 
 # Enable to read japanese
 setopt print_eight_bit
@@ -77,8 +77,6 @@ setopt interactive_comments
 PROMPT="%m:%n%# "
 #PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 RPROMPT="[%~]"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # tmux settings
 #PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

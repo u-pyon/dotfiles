@@ -106,8 +106,9 @@ set autoindent
 set nobackup
 "ファイル保存ダイアログの初期ディレクトリをバッファファイル位置に設定
 set browsedir=buffer
-"クリップボードをWindowsと連携
-set clipboard=unnamed
+"クリップボードをOSと連携
+set clipboard+=unnamed
+set clipboard+=autoselect
 "Vi互換をオフ
 "set nocompatible
 "スワップファイル用のディレクトリ
