@@ -1,6 +1,9 @@
 export PATH="${PATH}:/bin"
+export PYTHONPATH="$HOME/bin:${PYTHONPATH}"
+export EDITOR='vim'
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.bin/tmuxinator.zsh" ]] && source ~/.bin/tmuxinator.zsh
 
 #export LANG=ja_JP.UTF-8
 
@@ -19,6 +22,7 @@ alias gct="git commit -a -m"
 alias gdi="git diff"
 alias gbr="git branch"
 alias gad="git add"
+alias gmv="git mv"
 alias gpu="git push"
 alias gpl="git pull"
 alias grv="git revert"
@@ -74,9 +78,9 @@ setopt no_flow_control
 setopt interactive_comments
 
 # Display path to right
-PROMPT="%m:%n%# "
-#PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-RPROMPT="[%~]"
+#PROMPT="%m:%n%# "
+PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+#RPROMPT="[%~]"
 
 # tmux settings
 #PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

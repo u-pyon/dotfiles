@@ -1,0 +1,23 @@
+## vim
+You have to re-install vim plugins with NeoBundler at each enveropment.
+
+## tmuxinator
+Default settings use tmuxinator, and you have to install tmuxinator gem, set symbolic link of it to passthrough place, for example /usr/local/bin.
+
+$ gem install tmuxinator
+$ ln -s /path/to/dotfiles/tmuxinator/bin/tmuxinator /usr/local/bin/tmuxinator
+$ chmod 755 /usr/local/bin/tmuxinator
+
+Then create setting files.
+
+$ tmuxinator new default
+
+
+## Set symbolic links
+$ ln -s /path/to/dotfiles/.zshrc ~/.zshrc.pre-oh-my-zsh
+$ ln -s /path/to/dotfiles/.vim ~/.vim
+$ ln -s /path/to/dotfiles/.vimrc ~/.vimrc
+$ ln -s /path/to/dotfiles/.tmux ~/.tmux
+$ ln -s /path/to/dotfiles/.tmux-powerlinerc ~/.tmux-powerlinerc
+$ ln -s /path/to/dotfiles/.tmux.conf ~/.tmux.conf
+$ ln -s /path/to/dotfiles/.tmuxinator ~/.tmuxinator
