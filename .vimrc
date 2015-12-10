@@ -20,7 +20,7 @@ filetype plugin indent off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle'))
 " originalrepos on github
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
@@ -172,3 +172,5 @@ function! Paste_on_off()
     return
 endfunc
 " }}}
+
+call neobundle#end()
