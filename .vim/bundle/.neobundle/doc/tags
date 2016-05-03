@@ -6,6 +6,7 @@
 'syntastic_<filetype>_<checker>_<option>'	syntastic.txt	/*'syntastic_<filetype>_<checker>_<option>'*
 'syntastic_<filetype>_<checker>_exe'	syntastic.txt	/*'syntastic_<filetype>_<checker>_exe'*
 'syntastic_<filetype>_<checker>_exec'	syntastic.txt	/*'syntastic_<filetype>_<checker>_exec'*
+'syntastic_<filetype>_<checker>_fname'	syntastic.txt	/*'syntastic_<filetype>_<checker>_fname'*
 'syntastic_<filetype>_<checker>_quiet_messages'	syntastic.txt	/*'syntastic_<filetype>_<checker>_quiet_messages'*
 'syntastic_<filetype>_<checker>_sort'	syntastic.txt	/*'syntastic_<filetype>_<checker>_sort'*
 'syntastic_aggregate_errors'	syntastic.txt	/*'syntastic_aggregate_errors'*
@@ -38,6 +39,7 @@
 'syntastic_style_error_symbol'	syntastic.txt	/*'syntastic_style_error_symbol'*
 'syntastic_style_warning_symbol'	syntastic.txt	/*'syntastic_style_warning_symbol'*
 'syntastic_warning_symbol'	syntastic.txt	/*'syntastic_warning_symbol'*
+/syntastic/	syntastic.txt	/*\/syntastic\/*
 :Emmet	emmet.txt	/*:Emmet*
 :EmmetInstall	emmet.txt	/*:EmmetInstall*
 :Errors	syntastic.txt	/*:Errors*
@@ -45,7 +47,6 @@
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleCheckUpdate	neobundle.txt	/*:NeoBundleCheckUpdate*
-:NeoBundleClean	neobundle.txt	/*:NeoBundleClean*
 :NeoBundleClearCache	neobundle.txt	/*:NeoBundleClearCache*
 :NeoBundleCount	neobundle.txt	/*:NeoBundleCount*
 :NeoBundleDirectInstall	neobundle.txt	/*:NeoBundleDirectInstall*
@@ -61,7 +62,6 @@
 :NeoBundleLoadCache	neobundle.txt	/*:NeoBundleLoadCache*
 :NeoBundleLocal	neobundle.txt	/*:NeoBundleLocal*
 :NeoBundleLog	neobundle.txt	/*:NeoBundleLog*
-:NeoBundleRecipe	neobundle.txt	/*:NeoBundleRecipe*
 :NeoBundleReinstall	neobundle.txt	/*:NeoBundleReinstall*
 :NeoBundleRemotePlugins	neobundle.txt	/*:NeoBundleRemotePlugins*
 :NeoBundleRollback	neobundle.txt	/*:NeoBundleRollback*
@@ -224,6 +224,7 @@
 <Plug>(vimshell_next_prompt)	vimshell.txt	/*<Plug>(vimshell_next_prompt)*
 <Plug>(vimshell_paste_prompt)	vimshell.txt	/*<Plug>(vimshell_paste_prompt)*
 <Plug>(vimshell_previous_prompt)	vimshell.txt	/*<Plug>(vimshell_previous_prompt)*
+<Plug>(vimshell_send_eof)	vimshell.txt	/*<Plug>(vimshell_send_eof)*
 <Plug>(vimshell_split_create)	vimshell.txt	/*<Plug>(vimshell_split_create)*
 <Plug>(vimshell_split_switch)	vimshell.txt	/*<Plug>(vimshell_split_switch)*
 <Plug>(vimshell_switch)	vimshell.txt	/*<Plug>(vimshell_switch)*
@@ -453,6 +454,8 @@ g:neocomplcache_wildcard_characters	neocomplcache.txt	/*g:neocomplcache_wildcard
 g:neosnippet#data_directory	neosnippet.txt	/*g:neosnippet#data_directory*
 g:neosnippet#disable_runtime_snippets	neosnippet.txt	/*g:neosnippet#disable_runtime_snippets*
 g:neosnippet#disable_select_mode_mappings	neosnippet.txt	/*g:neosnippet#disable_select_mode_mappings*
+g:neosnippet#enable_auto_clear_markers	neosnippet.txt	/*g:neosnippet#enable_auto_clear_markers*
+g:neosnippet#enable_completed_snippet	neosnippet.txt	/*g:neosnippet#enable_completed_snippet*
 g:neosnippet#enable_conceal_markers	neosnippet.txt	/*g:neosnippet#enable_conceal_markers*
 g:neosnippet#enable_snipmate_compatibility	neosnippet.txt	/*g:neosnippet#enable_snipmate_compatibility*
 g:neosnippet#expand_word_boundary	neosnippet.txt	/*g:neosnippet#expand_word_boundary*
@@ -567,6 +570,7 @@ g:user_emmet_mode	emmet.txt	/*g:user_emmet_mode*
 g:user_emmet_settings	emmet.txt	/*g:user_emmet_settings*
 g:vimproc#disable	vimproc.txt	/*g:vimproc#disable*
 g:vimproc#dll_path	vimproc.txt	/*g:vimproc#dll_path*
+g:vimproc#download_windows_dll	vimproc.txt	/*g:vimproc#download_windows_dll*
 g:vimproc#password_pattern	vimproc.txt	/*g:vimproc#password_pattern*
 g:vimproc#popen2_commands	vimproc.txt	/*g:vimproc#popen2_commands*
 g:vimproc_dll_path	vimproc.txt	/*g:vimproc_dll_path*
@@ -657,7 +661,7 @@ i_<Plug>(vimshell_enter)	vimshell.txt	/*i_<Plug>(vimshell_enter)*
 i_<Plug>(vimshell_execute_by_background)	vimshell.txt	/*i_<Plug>(vimshell_execute_by_background)*
 i_<Plug>(vimshell_exit)	vimshell.txt	/*i_<Plug>(vimshell_exit)*
 i_<Plug>(vimshell_hide)	vimshell.txt	/*i_<Plug>(vimshell_hide)*
-i_<Plug>(vimshell_history_neocomplete)	vimshell.txt	/*i_<Plug>(vimshell_history_neocomplete)*
+i_<Plug>(vimshell_history_complete)	vimshell.txt	/*i_<Plug>(vimshell_history_complete)*
 i_<Plug>(vimshell_history_unite)	vimshell.txt	/*i_<Plug>(vimshell_history_unite)*
 i_<Plug>(vimshell_insert_last_word)	vimshell.txt	/*i_<Plug>(vimshell_insert_last_word)*
 i_<Plug>(vimshell_int_another_delete_backward_char)	vimshell.txt	/*i_<Plug>(vimshell_int_another_delete_backward_char)*
@@ -699,6 +703,8 @@ member_complete	neocomplcache.txt	/*member_complete*
 mi	clojure.txt	/*mi*
 mw	clojure.txt	/*mw*
 neobundle	neobundle.txt	/*neobundle*
+neobundle#add()	neobundle.txt	/*neobundle#add()*
+neobundle#add_meta()	neobundle.txt	/*neobundle#add_meta()*
 neobundle#append()	neobundle.txt	/*neobundle#append()*
 neobundle#begin()	neobundle.txt	/*neobundle#begin()*
 neobundle#bundle()	neobundle.txt	/*neobundle#bundle()*
@@ -710,7 +716,6 @@ neobundle#get()	neobundle.txt	/*neobundle#get()*
 neobundle#get_hooks()	neobundle.txt	/*neobundle#get_hooks()*
 neobundle#get_not_installed_bundle_names()	neobundle.txt	/*neobundle#get_not_installed_bundle_names()*
 neobundle#has_cache()	neobundle.txt	/*neobundle#has_cache()*
-neobundle#has_fresh_cache()	neobundle.txt	/*neobundle#has_fresh_cache()*
 neobundle#hooks	neobundle.txt	/*neobundle#hooks*
 neobundle#is_installed()	neobundle.txt	/*neobundle#is_installed()*
 neobundle#is_sourced()	neobundle.txt	/*neobundle#is_sourced()*
@@ -760,6 +765,7 @@ neobundle-options-install_process_timeout	neobundle.txt	/*neobundle-options-inst
 neobundle-options-lazy	neobundle.txt	/*neobundle-options-lazy*
 neobundle-options-mappings	neobundle.txt	/*neobundle-options-mappings*
 neobundle-options-name	neobundle.txt	/*neobundle-options-name*
+neobundle-options-normalized_name	neobundle.txt	/*neobundle-options-normalized_name*
 neobundle-options-on_cmd	neobundle.txt	/*neobundle-options-on_cmd*
 neobundle-options-on_ft	neobundle.txt	/*neobundle-options-on_ft*
 neobundle-options-on_func	neobundle.txt	/*neobundle-options-on_func*
@@ -767,10 +773,7 @@ neobundle-options-on_i	neobundle.txt	/*neobundle-options-on_i*
 neobundle-options-on_map	neobundle.txt	/*neobundle-options-on_map*
 neobundle-options-on_path	neobundle.txt	/*neobundle-options-on_path*
 neobundle-options-on_source	neobundle.txt	/*neobundle-options-on_source*
-neobundle-options-on_unite	neobundle.txt	/*neobundle-options-on_unite*
 neobundle-options-pre_cmd	neobundle.txt	/*neobundle-options-pre_cmd*
-neobundle-options-recipe	neobundle.txt	/*neobundle-options-recipe*
-neobundle-options-regular_name	neobundle.txt	/*neobundle-options-regular_name*
 neobundle-options-rtp	neobundle.txt	/*neobundle-options-rtp*
 neobundle-options-script_type	neobundle.txt	/*neobundle-options-script_type*
 neobundle-options-site	neobundle.txt	/*neobundle-options-site*
@@ -779,10 +782,8 @@ neobundle-options-type	neobundle.txt	/*neobundle-options-type*
 neobundle-options-type__depth	neobundle.txt	/*neobundle-options-type__depth*
 neobundle-options-type__filename	neobundle.txt	/*neobundle-options-type__filename*
 neobundle-options-type__protocol	neobundle.txt	/*neobundle-options-type__protocol*
-neobundle-options-unite_sources	neobundle.txt	/*neobundle-options-unite_sources*
 neobundle-options-verbose	neobundle.txt	/*neobundle-options-verbose*
 neobundle-options-vim_version	neobundle.txt	/*neobundle-options-vim_version*
-neobundle-recipe	neobundle.txt	/*neobundle-recipe*
 neobundle-unite-source-neobundle	neobundle.txt	/*neobundle-unite-source-neobundle*
 neobundle-unite-source-neobundle-install	neobundle.txt	/*neobundle-unite-source-neobundle-install*
 neobundle-unite-source-neobundle-lazy	neobundle.txt	/*neobundle-unite-source-neobundle-lazy*
@@ -1077,8 +1078,12 @@ syntastic-checker-options	syntastic.txt	/*syntastic-checker-options*
 syntastic-commands	syntastic.txt	/*syntastic-commands*
 syntastic-compatibility	syntastic.txt	/*syntastic-compatibility*
 syntastic-composite	syntastic.txt	/*syntastic-composite*
+syntastic-config-debug	syntastic.txt	/*syntastic-config-debug*
+syntastic-config-empty	syntastic.txt	/*syntastic-config-empty*
 syntastic-config-exec	syntastic.txt	/*syntastic-config-exec*
+syntastic-config-filtering	syntastic.txt	/*syntastic-config-filtering*
 syntastic-config-makeprg	syntastic.txt	/*syntastic-config-makeprg*
+syntastic-config-no-makeprgbuild	syntastic.txt	/*syntastic-config-no-makeprgbuild*
 syntastic-config-sort	syntastic.txt	/*syntastic-config-sort*
 syntastic-contents	syntastic.txt	/*syntastic-contents*
 syntastic-csh	syntastic.txt	/*syntastic-csh*
@@ -1099,6 +1104,7 @@ syntastic-netrw	syntastic.txt	/*syntastic-netrw*
 syntastic-notes	syntastic.txt	/*syntastic-notes*
 syntastic-powerline	syntastic.txt	/*syntastic-powerline*
 syntastic-powershell	syntastic.txt	/*syntastic-powershell*
+syntastic-profiling	syntastic.txt	/*syntastic-profiling*
 syntastic-pymode	syntastic.txt	/*syntastic-pymode*
 syntastic-quickstart	syntastic.txt	/*syntastic-quickstart*
 syntastic-recommended	syntastic.txt	/*syntastic-recommended*
